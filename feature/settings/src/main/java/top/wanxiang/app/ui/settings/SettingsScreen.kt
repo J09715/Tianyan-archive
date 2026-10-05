@@ -1064,6 +1064,7 @@ fun SystemDevSettingsScreen(
 }
 
 
+@Composable
 private fun ExecutionModeDialog(
     currentMode: ExecutionMode,
     switching: Boolean,
@@ -1429,6 +1430,7 @@ private fun isIgnoringBatteryOptimizations(context: Context): Boolean =
     context.getSystemService(PowerManager::class.java)
         ?.isIgnoringBatteryOptimizations(context.packageName) == true
 
+@Composable
 internal fun SettingsGroup(content: @Composable () -> Unit) {
     RuntimeCard(
         Modifier.fillMaxWidth(),
