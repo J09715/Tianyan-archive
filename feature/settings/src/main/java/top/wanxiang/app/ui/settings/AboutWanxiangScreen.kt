@@ -157,10 +157,10 @@ fun AboutWanxiangScreen(
                         title = "系统设置与电池优化",
                         value = "跳转到系统设置",
                         onClick = {
-                            val c = LocalContext.current
-                            c.startActivity(Intent(AndroidSettings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
-                                data = Uri.parse("package:" + c.packageName)
-                            })
+                            val intent = Intent(AndroidSettings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
+                                data = Uri.parse("package:" + context.packageName)
+                            }
+                            context.startActivity(intent)
                         },
                     )
                 }
