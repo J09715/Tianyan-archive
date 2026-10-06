@@ -6,8 +6,8 @@ import java.util.Properties
 import org.gradle.kotlin.dsl.configure
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
-val appVersionName = "0.13.35"
-val appVersionCode = 54
+val appVersionName = "0.14.0"
+val appVersionCode = 55
 
 // WanXiangDev 双包构建开关：CI（.github/workflows/wanxiangdev-build.yml）设 WANXIANG_DEV_BUILD=1 时，
 // 产出独立预览包 top.tianyan.app.dev / 应用名 TianyanDev / 版本后缀 -dev，
@@ -282,7 +282,7 @@ tasks.configureEach {
 
 extensions.configure<ApplicationAndroidComponentsExtension> {
     onVariants { variant ->
-        val buildAppName = "wanxiang-v${appVersionName}-${variant.name}.apk"
+        val buildAppName = "tianyan-v${appVersionName}-${variant.name}.apk"
         variant.outputs.forEach { output ->
             output.outputFileName.set(buildAppName)
         }
