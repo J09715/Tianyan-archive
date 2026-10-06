@@ -58,8 +58,8 @@ import top.wanxiang.app.runtime.shell.ProcessShellExecutor
 import top.wanxiang.app.runtime.shell.ShellExecutor
 import top.wanxiang.app.runtime.pty.PtyManager
 import top.wanxiang.app.runtime.pty.NativePtyManager
-import top.tianyan.app.runtime.service.LocalServiceLauncher
-import top.tianyan.app.runtime.service.LocalServiceLauncherImpl
+import top.wanxiang.app.runtime.service.LocalServiceLauncher
+import top.wanxiang.app.runtime.service.LocalServiceLauncherImpl
 import top.tianyan.app.service.AgentForegroundLauncherImpl
 import top.wanxiang.app.harness.AgentForegroundLauncher
 import dagger.Module
