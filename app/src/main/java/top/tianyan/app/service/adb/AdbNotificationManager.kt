@@ -19,7 +19,7 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.launch
-import top.wanxiang.app.MainActivity
+import top.tianyan.app.MainActivity
 import top.tianyan.app.R
 import top.wanxiang.app.runtime.bridge.adb.EmbeddedAdbManager
 
